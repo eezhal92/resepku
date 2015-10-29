@@ -214,7 +214,7 @@ h2 {
 }
 
 .action-form input[type=text], .action-form input[type=email] {
-	color: #fff;
+	color: #000;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	width: 100%;
