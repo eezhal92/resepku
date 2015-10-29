@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+body, ul, h1 {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto' ,'Segoe UI';
+}
+
+header {
+	background: #EF4836;
+	color: #fff;
+	overflow: hidden;
+	padding: 10px 20px;
+}
+
+header .top {
+	overflow: hidden;
+}
+
+
+header h1.site-title {
+	float: left;
+}
+
+header input.search {
+	color: #fff;
+	background: #96281B;
+	border: 0;
+	border-radius: 4px;
+	padding: 10px 20px;
+	float:right;
+	margin-top: 10px;
+}
+
+header input.search::-webkit-input-placeholder {
+	color: #ccc;
+}
+
+
+header nav ul li {
+	display: inline-block;
+	padding: 10px;
+	border-right: 1px dotted #fff;
+}
+
+header nav ul li:last-child {
+	margin-right: 0;
+	border-right: 0;
+}
+
+header nav ul li a {
+	color: #fff;	
+	text-decoration: none;
+}
+
+header nav ul li:first-child {
+	padding-left: 0;
+}
+
+header nav ul li:last-child {
+	padding-right: 0;
+}
+
+header .secondary-nav {
+	clear:both;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+header .secondary-nav .left-nav {
+	float: left;
+}
+
+header .secondary-nav .right-nav {
+	float: right;
+}
+
+.top-banner {
+	background: url(banner.jpg);	
+}
+
+.event-banner {
+	background: url(bubur.jpg);	
+}
+
+.banner {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 480px;
+	position: relative;
+}
+
+
+.banner .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.banner .overlay.overlay-red {
+	background: rgba(239, 72, 54, 0.3);	
+}
+
+.banner .description {
+	position: absolute;
+	text-align: right;
+	bottom: 40;
+	right: 80;
+	color: #fff;
+}
+
+h2 {
+	font-size: 38px;
+}
+
+.banner .description.description-center {
+	position: absolute;
+	text-align: center;
+	top: 160;
+	right: 0;
+	left: 0;	
+	color: #fff;
+}
+
+.best-recipe {
+	overflow: hidden;
+	padding: 80px 0;	
+}
+
+.best-recipe .item {
+	width: 390px;
+	float: left;
+	border: 2px #ccc solid;
+	border-radius: 4px;
+	margin: 0 28px;	
+}
+
+.best-recipe .item:last-child {
+	margin-right: 0;
+}
+
+.best-recipe h2 {
+	text-align: center;
+}
+
+.best-recipe .item .meta {
+	overflow: hidden;
+}
+
+.best-recipe .item .meta .details {
+	width: 240px;
+	padding: 10 20px;
+	float: left;
+}
+
+.best-recipe .item .meta .details h3 {
+	color: #EF4836;
+}
+
+.best-recipe .item .meta .rating {
+	width: 110px;
+	text-align: center;
+	padding: 30px 0;
+	float: left;
+}
+
+.best-recipe .item .meta .rating .number {
+	font-size: 70px;
+	color: #EF4836;
+}
+
+.action-form {
+	overflow: hidden;
+	padding: 80px 20px;
+}
+
+.action-form h2 {
+	text-align: center;
+}
+
+.btn {
+	background: #EF4836;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 20px;
+	border: none;
+	width: 100%;	
+	border-radius: 4px;
+
+}
+
+.form-group {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.half {
+	width: 49%;
+	float: left;
+}
+
+.half:first-child {
+	padding-left: 0;
+	padding-right: 1%;
+}
+
+.half:last-child {
+	padding-right: 0;
+	padding-left:1%;
+}
+
+.action-form input[type=text], .action-form input[type=email] {
+	color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 100%;
+	padding: 10px 20px;
+}
+
+footer {
+	background: #22313F;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+footer p {
+	font-size: 18px;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
