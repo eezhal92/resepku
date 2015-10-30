@@ -52,10 +52,9 @@ header input.search {
 	margin-top: 10px;
 }
 
-header input.search::-webkit-input-placeholder {
+header input.search::-webkit-input-placeholder, header input.search:-ms-input-placeholder {
 	color: #ccc;
 }
-
 
 header nav ul li {
 	display: inline-block;
@@ -143,7 +142,7 @@ img.full {
 .banner.top-banner .description {
 	text-align: right;
 	bottom: 40;	
-	right: 80;	
+	right: 40;	
 }
 
 
@@ -313,15 +312,19 @@ h2 {
 	padding-left:1%;
 }
 
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], textarea {
 	color: #000;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	padding: 10px 20px;
 }
 
-input[type=text].full, input[type=email].full, input[type=password].full {
+input[type=text].full, input[type=email].full, input[type=password].full, textarea.full {
 	width: 100%;
+}
+
+input:-ms-input-placeholder {
+	color: #ccc;	
 }
 
 .content {
@@ -342,7 +345,8 @@ input[type=text].full, input[type=email].full, input[type=password].full {
 
 .content .secondary {
 	float: left;	
-	width: 30%;	
+	width: 28%;
+	margin-left: 2%;	
 }
 
 .content .secondary .rating {
@@ -369,7 +373,10 @@ input[type=text].full, input[type=email].full, input[type=password].full {
 	}
 
 	.content .secondary {
+		width: 100%;
+		display: block;
 		margin-top: 40px;
+		margin-left: 0;
 	}
 }
 
@@ -460,4 +467,21 @@ footer p {
 	color: #fff;
 	padding: 0;
 	margin: 0;
+}
+
+.comment-item {
+	padding: 10px 20px;
+	background: #ececec;
+	margin-bottom: 15px;
+}
+
+.comment-item .author .date {
+	font-size: 16px;
+	font-style: italic;
+	color: #a1a1a1;
+	margin-left: 5px;
+}
+
+.comment-item .author .date:before {
+	content: "@ ";
 }
