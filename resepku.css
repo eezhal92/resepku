@@ -246,7 +246,7 @@ h2 {
 	.best-recipe .item {
 		width: 46%;
 		margin: 0 1.6%;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		display: inline-block;
 	}
 
@@ -256,16 +256,16 @@ h2 {
 }
 
 @media screen and (max-width: 628px) {
-	.best-recipe .item img {
-		width: 100%;
-		height: auto;
-	}
-
 	.best-recipe .item {
 		width: 96%;
 		margin: 0 2%;
-		margin-bottom: 20px;
+		margin-bottom: 60px;
 	}
+
+	.best-recipe .item img {
+		width: 100%;
+		height: auto;
+	}	
 
 	.best-recipe .item .meta .details h3 {
 		font-size: 32px;
@@ -484,4 +484,28 @@ footer p {
 
 .comment-item .author .date:before {
 	content: "@ ";
+}
+
+ul.pagination.pagination-simple {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+ul.pagination.pagination-simple li {
+	border: 2px solid #EF4836;
+	margin: 0;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+ul.pagination.pagination-simple li a {
+	text-decoration: none;
+	color: #EF4836;
+	font-weight: bold;
+}
+
+ul.pagination.pagination-simple li.disabled {
+	background: #ececec;	
 }
