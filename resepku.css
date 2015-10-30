@@ -1,9 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);*/
 
-body, ul, h1 {
+body {
+	font-family: 'Roboto' ,'Segoe UI';	
+}
+
+body, nav ul, h1 {
 	padding: 0;
 	margin: 0;
-	font-family: 'Roboto' ,'Segoe UI';
 }
 
 header {
@@ -20,6 +23,11 @@ header .top {
 
 header h1.site-title {
 	float: left;
+}
+
+header h1.site-title a {
+	text-decoration: none;
+	color: #fff;	
 }
 
 header input.search {
@@ -91,6 +99,10 @@ header .secondary-nav .right-nav {
 	position: relative;
 }
 
+img.full {
+	background-size: cover;
+	height: 480px;	
+}
 
 .banner .overlay {
 	position: absolute;
@@ -105,13 +117,17 @@ header .secondary-nav .right-nav {
 	background: rgba(239, 72, 54, 0.3);	
 }
 
-.banner .description {
+.banner .description {	
 	position: absolute;
-	text-align: right;
-	bottom: 40;
-	right: 80;
 	color: #fff;
 }
+
+.banner.top-banner .description {
+	text-align: right;
+	bottom: 40;	
+	right: 80;	
+}
+
 
 h2 {
 	font-size: 38px;
@@ -157,21 +173,58 @@ h2 {
 	float: left;
 }
 
-.best-recipe .item .meta .details h3 {
+.best-recipe .item .meta .details h3, .best-recipe .item .meta .details h3 a {
 	color: #EF4836;
 }
 
-.best-recipe .item .meta .rating {
+.best-recipe .item .meta .details h3 a {
+	text-decoration: none;
+}
+
+.best-recipe .item .meta .details h3 a:hover {
+	color: #EB1801;
+}
+
+.best-recipe .item .meta .rating, .content .secondary .rating {
 	width: 110px;
 	text-align: center;
 	padding: 30px 0;
 	float: left;
 }
 
-.best-recipe .item .meta .rating .number {
+.best-recipe .item .meta .rating strong, .content .secondary .rating h3 {
+	display: block;
+}
+
+.best-recipe .item .meta .rating .number, .content .secondary .rating .number {
 	font-size: 70px;
 	color: #EF4836;
 }
+
+.content {
+	font-size: 18px;
+}
+
+.content .summary {
+	font-style: italic;
+}
+
+.content .secondary .rating {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+.content .secondary .rating h3 {
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+ .content .secondary .rating .number {
+ 	font-size: 120px;
+ }
 
 .action-form {
 	overflow: hidden;
@@ -219,6 +272,21 @@ h2 {
 	border-radius: 4px;
 	width: 100%;
 	padding: 10px 20px;
+}
+
+.content {
+	overflow: hidden;
+	padding: 80px 20px;
+}
+
+.content .main {
+	float: left;
+	width: 70%;
+}
+
+.content .secondary {
+	float: left;	
+	width: 30%;	
 }
 
 footer {
