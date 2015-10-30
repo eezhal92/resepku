@@ -3,9 +3,9 @@
 	<title>resepku.com</title>
 	<link rel="stylesheet" type="text/css" href="resepku.css">
 </head>
-<body>
-	<div class="container">
-		<header>
+<body>	
+	<header>
+		<div class="container">
 			<div class="top">
 				<h1 class="site-title"><a href="home.html">resepku.com</a></h1>
 				<input type="text" class="search" placeholder="Cari...">
@@ -23,13 +23,18 @@
 				</ul>
 			</nav>
 			</div>
-		</header>
-		<div class="banner recipe-banner" style="background: url(lemper.jpg)">				
+		</div>	
+	</header>
+	<section class="banner recipe-banner" style="background: url(lemper.jpg)">				
+		<div class="overlay"></div>						
+		<div class="container container-absolute">
 			<div class="description description-center">
 				<h2>Lalampa Goreng</h2>				
 			</div>
 		</div>
-		<div class="content">
+	</section>
+	<section class="content">
+		<div class="container">
 			<div class="main">
 				<h3>Lalampa Goreng Khas Sumatera</h3>
 				<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -71,9 +76,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<footer>
-		<p class="center">Copyright 2015. Resepku.com</p>
+		<div class="container">
+			<p class="center">Copyright 2015. Resepku.com</p>
+		</div>
 	</footer>
 </body>
 </html>
