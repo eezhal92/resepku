@@ -1,7 +1,7 @@
 <?php
 
 $comment = [
-	'name' => $_POST['name'] . ' via server',
+	'name' => $_POST['name'] . ' @ ' . date('M d, Y - H:i', time()),
 	'text' => $_POST['text']
 ];
 
