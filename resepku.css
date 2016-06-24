@@ -27,10 +27,10 @@ header .top {
 
 .container.container-absolute {
 	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
 }
 
 header h1.site-title {
@@ -137,12 +137,13 @@ img.full {
 .banner .description {	
 	position: absolute;
 	color: #fff;
+
 }
 
 .banner.top-banner .description {
 	text-align: right;
-	bottom: 40;	
-	right: 40;	
+	bottom: 40px;	
+	right: 40px;	
 }
 
 
@@ -153,9 +154,9 @@ h2 {
 .banner .description.description-center {
 	position: absolute;
 	text-align: center;
-	top: 160;
-	right: 0;
-	left: 0;	
+	top: 160px;
+	right: 0px;
+	left: 0px;	
 	color: #fff;
 }
 
@@ -321,6 +322,7 @@ input[type=text], input[type=email], input[type=password], textarea {
 
 input[type=text].full, input[type=email].full, input[type=password].full, textarea.full {
 	width: 100%;
+	box-sizing: border-box;
 }
 
 input:-ms-input-placeholder {
